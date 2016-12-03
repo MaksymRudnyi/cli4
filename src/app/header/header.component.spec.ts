@@ -5,6 +5,8 @@ import {DebugElement} from '@angular/core';
 
 import {HeaderComponent} from './header.component';
 import {FormsModule} from '@angular/forms';
+import {SearchComponent} from "./search/search.component";
+import {AppsMenuComponent} from "./apps-menu/apps-menu.component";
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
@@ -13,7 +15,7 @@ describe('HeaderComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [FormsModule],
-            declarations: [HeaderComponent]
+            declarations: [HeaderComponent, SearchComponent, AppsMenuComponent]
         })
             .compileComponents();
     }));
@@ -28,10 +30,4 @@ describe('HeaderComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should trim the search request', () => {
-        let testString = 'Test string';
-        component.searchData.text = `  ${testString}   `;
-
-        expect(component.goSearch()).toBe(testString);
-    });
-});
+   });
