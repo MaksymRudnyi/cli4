@@ -5,8 +5,8 @@ import {DebugElement} from '@angular/core';
 
 import {HeaderComponent} from './header.component';
 import {FormsModule} from '@angular/forms';
-import {SearchComponent} from "./search/search.component";
-import {AppsMenuComponent} from "./apps-menu/apps-menu.component";
+import {SearchComponent} from './search/search.component';
+import {AppsMenuComponent} from './apps-menu/apps-menu.component';
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
