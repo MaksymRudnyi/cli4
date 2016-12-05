@@ -4,8 +4,8 @@ import {TestBed, async} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FormsModule} from '@angular/forms';
-import {SearchComponent} from "./header/search/search.component";
-import {AppsMenuComponent} from "./header/apps-menu/apps-menu.component";
+import {SearchComponent} from './header/search/search.component';
+import {AppsMenuComponent} from './header/apps-menu/apps-menu.component';
 
 describe('AppComponent', () => {
     beforeEach(() => {

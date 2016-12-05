@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AppsMenuComponent } from './header/apps-menu/apps-menu.component';
 import { SearchComponent } from './header/search/search.component';
+import { EmailListComponent } from './email/email-list/email-list.component';
+import { EmailComponent } from './email/email/email.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AppsMenuComponent,
-    SearchComponent
+    SearchComponent,
+    EmailListComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
