@@ -6,19 +6,12 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-    searchData = {
-        text: ''
-    };
-
     constructor() {
     }
 
     ngOnInit() {
     }
 
-    goSearch () {
-        // Search through the emails
-        return this.searchData.text.trim();
-    }
+
 
 }
