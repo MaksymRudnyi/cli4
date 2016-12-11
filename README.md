@@ -26,6 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 Run `ng github-pages:deploy` to deploy to Github Pages.
 
+## Linting before commit
+
+To validate your code each time before commit add 'pre-commit' file from the root directory to '<project_directory>/.git/hooks/'
+
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
