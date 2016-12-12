@@ -15,6 +15,7 @@ export class EmailListComponent implements OnInit {
             new Email('Den Berg', 'Income Payment'),
             new Email('Den Berg', 'Income Payment'),
             new Email('Den Berg', 'Income Payment'),
+            new Email('Test test', 'Income test'),
         ];
     }
 
