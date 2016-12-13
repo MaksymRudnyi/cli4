@@ -1,0 +1,14 @@
+$menu_item_color: #222;
+$menu_active_item_color: #dd4b39;
+
+span {
+  a {
+    color: $menu_item_color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &.active  a{
+    color: $menu_active_item_color;
+    font-weight: bold;
+  }
+}

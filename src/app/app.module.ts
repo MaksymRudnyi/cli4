@@ -5,6 +5,7 @@ import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {Routes, RouterModule} from '@angular/router';
 import {EmailsComponent} from './emails/emails.component';
+import {SidebarComponent} from './email/sidebar/sidebar.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'mail', pathMatch: 'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
 @NgModule({
     declarations: [
         AppComponent,
-        EmailsComponent
+        EmailsComponent,
+        SidebarComponent
     ],
     imports: [
         BrowserModule,
