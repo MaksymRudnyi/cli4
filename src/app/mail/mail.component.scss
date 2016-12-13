@@ -1,0 +1,72 @@
+$backgroundColor: #f2f2f2;
+.mail {
+  //font-size: 1em;
+  width: 100%;
+  height: 2.5em;
+  line-height: 4em;
+  background-color: $backgroundColor;
+  display: table;
+  border-bottom: 1px solid #bfbfbf;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
+  &__options {
+    display: table;
+    float: left;
+    position: relative;
+
+    &--checkbox {
+      position: absolute;
+      top: 1.7em;
+      float: left;
+      //margin-right: 0.3em;
+    }
+    &--star {
+      position: absolute;
+      top: 1.4em;
+      left: 1.8em;
+      width: 18px;
+      height: 18px;
+      float: left;
+    }
+    &--mark {
+      position: absolute;
+      top: 1.65em;
+      left: 3.5em;
+      width: 18px;
+      height: 12px;
+      float: left;
+    }
+  }
+  &__sender {
+    float: left;
+    font-weight: bold;
+    margin-left: 11em;
+    width: 13em;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__subject {
+    float: left;
+    font-weight: bold;
+    margin-right: 0.2em;
+  }
+
+  &__content {
+    float: left;
+    margin-right: 0.2em;
+    width: 28em;
+  }
+
+  &__date {
+    float: right;
+    margin-right: 1em;
+    font-weight: bold;
+
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+  .mail { font-size: 0.9rem; }
+
+}

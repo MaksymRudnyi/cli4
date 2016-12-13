@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MailItemComponent } from './mail-item.component';
+import { MailItemComponent } from './mail.component.ts';
 
 describe('MailItemComponent', () => {
   let component: MailItemComponent;
