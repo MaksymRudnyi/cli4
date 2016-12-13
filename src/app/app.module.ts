@@ -9,6 +9,7 @@ import { AppsMenuComponent } from './header/apps-menu/apps-menu.component';
 import { SearchComponent } from './header/search/search.component';
 import { EmailListComponent } from './email/email-list/email-list.component';
 import { EmailComponent } from './email/email/email.component';
+import { MailItemComponent } from './mail-item/mail-item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { EmailComponent } from './email/email/email.component';
     AppsMenuComponent,
     SearchComponent,
     EmailListComponent,
-    EmailComponent
+    EmailComponent,
+    AppComponent,
+    MailItemComponent
   ],
   imports: [
     BrowserModule,
