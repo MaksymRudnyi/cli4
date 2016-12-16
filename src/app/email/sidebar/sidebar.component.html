@@ -1,10 +1,10 @@
 <div class='sidebar'>
-  <div class='menu-item'
-       *ngFor='let item of menu'
-       [ngClass]='{"active": item.active}'
-       (click)='menuItemClick($event, item)'>
+    <div class='menu-item'
+         *ngFor='let item of menu'
+         [ngClass]='{"active": item.active}'
+         (click)='menuItemClick($event, item)'>
     <span>
       <a href='#'>{{item.text}}</a>
     </span>
-  </div>
+    </div>
 </div>
