@@ -1,17 +1,5 @@
-import { Component } from '@angular/core';
-import { MenuItem } from './menu_item';
-
-const menuMock: MenuItem[] = [
-  {
-    text: 'Inbox',
-    active: true
-  },
-  {
-    text: 'Outbox',
-    active: false
-  }
-
-];
+import { Component, Output, EventEmitter } from '@angular/core';
+import { MenuItem, menuMock } from './menu_item';
 
 @Component({
   selector: 'app-sidebar',
@@ -19,5 +7,15 @@ const menuMock: MenuItem[] = [
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  selectedItem: number;
   menu: MenuItem[] = menuMock;
+  @Output() onMenuSelected = new EventEmitter<number>();
+
+  menuItemClick(event: Event, item: MenuItem) {
+    event.preventDefault();
+    this.onMenuSelected.emit(item.id);
+    this.selectedItem = item.id;
+    this.menu.forEach((item) => item.unselect());
+    item.select();
+  }
 }
