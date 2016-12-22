@@ -3,9 +3,10 @@ export interface IMenuItem {
 }
 
 export class MenuItem implements IMenuItem {
+    static currentMenuItemId = 1;
     id: number;
 
-    constructor(public text: string, private active: boolean = false) {
+    constructor(public text: string, private active = false) {
         this.id = MenuItem.currentMenuItemId++;
     }
 
@@ -16,9 +17,6 @@ export class MenuItem implements IMenuItem {
     unselect() {
         this.active = false;
     }
-
-    static currentMenuItemId = 1;
-
 }
 
 export let menuMock: MenuItem[] = [

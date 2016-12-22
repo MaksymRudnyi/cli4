@@ -15,7 +15,7 @@ export class SidebarComponent {
         event.preventDefault();
         this.onMenuSelected.emit(item.id);
         this.selectedItem = item.id;
-        this.menu.forEach((item) => item.unselect());
+        this.menu.forEach((menuItem) => menuItem.unselect());
         item.select();
     }
 }

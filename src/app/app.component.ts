@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    sideBarMenuSelected(menuItemId: number) {
+        console.log('selected menu item id: %d', menuItemId);
+    }
 }
